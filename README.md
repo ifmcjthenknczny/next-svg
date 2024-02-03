@@ -1,0 +1,1 @@
+Svg są źle rozwiązane, kod nie jest czysty i wystarcząco zabstakcjowany, źle współpracuje z dark modem i możliwościami zmian koloru. Wyobraź sobie że masz pełno ikon
