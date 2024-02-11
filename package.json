@@ -2,13 +2,20 @@
   "name": "next-svg",
   "version": "1.0.0",
   "description": "This package lets you dynamic import your svg images as a Next.Js component as a parameter, with no problem at all.",
-  "main": "index.js",
+  "main": "./out/build/index.js",
+  "types": "./out/build/index.d.ts",
+  "files": [
+    "/out/build"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npx eslint --cache --cache-location ./out/.eslintcache './**/*.{ts,tsx}'",
+    "compile": "npx tsc",
+    "build": "yarn run lint && yarn run compile",
+    "fix": "yarn run lint --fix"
   },
   "repository": {
     "type": "git",
-    "url": "next-svg"
+    "url": "https://github.com/ifmcjthenknczny/next-svg.git"
   },
   "keywords": [
     "nextjs",
@@ -21,14 +28,29 @@
     "nextjs",
     "reactjs",
     "component",
-    "svgs"
+    "svgs",
+    "next",
+    "image",
+    "images",
+    "image component",
+    "svg component"
   ],
-  "author": "Maciej Konieczny",
+  "author": "Maciej Konieczny @ifmcjthenknczny",
   "license": "ISC",
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "typescript": "^5.3.3"
   }
 }
