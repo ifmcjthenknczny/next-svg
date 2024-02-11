@@ -12,9 +12,7 @@ type Props = {
 
 const BASE_DIR = '/public/svg/'
 
-const getFillColor = (color?: string): string => {
-	return color || 'currentColor'
-}
+const getFillColor = (color?: string): string => color || 'currentColor'
 
 const normalizeSubdirectory = (subdirectory?: string): string => {
 	if (!subdirectory) {
@@ -25,9 +23,7 @@ const normalizeSubdirectory = (subdirectory?: string): string => {
 	return newSubDirectory.endsWith('/') ? newSubDirectory : `${newSubDirectory}/`
 }
 
-const normalizeName = (name: string): string => {
-	return name.replace('.svg','')
-}
+const normalizeName = (name: string): string => name.replace('.svg','')
 
 const assembleDirectory = (name: string, subdirectory?: string) => `${BASE_DIR}${normalizeSubdirectory(subdirectory)}${normalizeName(name)}.svg`
 

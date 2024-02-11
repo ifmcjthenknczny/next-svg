@@ -44,9 +44,10 @@
     "react-dom": "^18.2.0"
   },
   "publishConfig": {
-    "registry": "https://github.com/ifmcjthenknczny/next-svg.git"
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
+    "@types/react": "^18.2.55",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
     "eslint": "^8.56.0",
