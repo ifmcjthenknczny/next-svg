@@ -1,15 +1,15 @@
 {
   "name": "next-svg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package lets you dynamic import your svg images as a Next.Js component as a parameter, with no problem at all.",
-  "main": "./out/build/index.js",
-  "types": "./out/build/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "/out/build"
+    "/dist"
   ],
   "scripts": {
-    "lint": "npx eslint --cache --cache-location ./out/.eslintcache './**/*.{js,ts,tsx}'",
-    "compile": "npx tsc",
+    "lint": "npx eslint .",
+    "compile": "npx tsc --outDir dist",
     "build": "yarn run lint && yarn run compile",
     "fix": "yarn run lint --fix"
   },
