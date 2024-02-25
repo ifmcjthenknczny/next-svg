@@ -1,6 +1,6 @@
 {
   "name": "next-svg",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This package lets you dynamic import your svg images as a Next.Js component as a parameter, with no problem at all.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ifmcjthenknczny/next-svg"
+    "url": "git+https://github.com/ifmcjthenknczny/next-svg.git"
   },
   "keywords": [
     "nextjs",
